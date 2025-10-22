@@ -1,0 +1,114 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(58,124,170);
+    color: #fff;
+    padding: 1rem 1rem;
+    position: fixed;
+}
+
+header h1 {
+    font-size: 1em;
+    margin: 0;
+    display: inline;
+}
+
+header section{
+    float: right;
+}
+
+header a, footer a {
+    transition: color 0.3s erase;
+    margin-right: 2em;
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: beige;
+}
+
+#inicio {
+    padding: 13.5rem 2rem;
+    background-image: url("../img/hola.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#inicio h2 {
+    font-size: 4vw;
+    text-align: center;
+    color:azure;
+}
+
+#descripcion {
+    text-align: justify;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.apartados {
+    padding-top: 2em;
+    margin-left: 2em;
+}
+
+.articulo {
+    transition: box-shadow 0.3s ease;
+    background-color: ghostwhite;
+    margin: 1em 5em;
+    border-radius: 0.5rem;
+    padding: 0.25em 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 20%;
+}
+
+section article h3 {
+    text-align: center;
+}
+
+.articulo:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,0.3);
+}
+
+footer {
+    background-color: #222;
+    padding: 3rem;
+    color: #fff; 
+}
+
+footer section {
+    float: right;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a:hover {
+    color: cornflowerblue;
+}
+
+#contacto div {
+    display: flex;
+    justify-content: center;
+}
+
+.circular {
+    width: 3em;
+    height: 3em;
+    margin-left: 1em;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    border-radius: 30%;
+}
