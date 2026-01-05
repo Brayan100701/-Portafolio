@@ -5,6 +5,27 @@
     background-size: cover;
 }
 
+#acerca-de {
+    height: 100vh;
+    width: 100wh;
+}
+
+.descripcion {
+    font-size: 3em;
+}
+
+#hola {
+    color: rgb(241, 226, 12);
+}
+
+.iconos-portada {
+    width: 3em;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 25%;
+}
+
 .card {
     height: 100%;
     justify-content: center;
