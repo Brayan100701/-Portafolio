@@ -1,0 +1,23 @@
+body {
+    background: rgb(75, 67, 67);
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.container header {
+    background: #09f;
+}
+
+
+.iconos {
+    width: 6em;
+    height: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    border-radius: 25%;
+}
