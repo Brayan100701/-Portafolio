@@ -26,18 +26,12 @@
     border-radius: 25%;
 }
 
-/* section {
-    height: 100vh;
-    justify-content: center;
-} */
-
 h2 {
     margin: 2vh;
 }
 
 .card {
     height: 100%;
-    justify-content: center;
 }
 
 .card:hover {
@@ -62,24 +56,4 @@ h2 {
 
 .iconos:hover > :not(:hover){
     opacity: 0.3;
-}
-
-.im-grids {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-
-
-
-/*CSS de prueba*/
-#test {
-    height: max-content;
-}
-
-
-.empty:hover {
-    border-color: black;
-    transform: scale(1.2);
-    transition: 1s;
 }
