@@ -11,7 +11,7 @@ function Welcome() {
       <NavBar />
       <AcercaDe />
       <Formacion />
-      <Proyectos />
+      {/* <Proyectos /> */}
       <Skills />
       <MasDe />
     </>
