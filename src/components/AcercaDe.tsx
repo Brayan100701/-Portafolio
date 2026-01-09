@@ -42,16 +42,6 @@ export default function AcercaDe() {
             />
           </a>
           <div className="row">
-            <p id="presentacion">
-              Soy apasionado del desarrollo de software, hardware, PC Gaming y
-              la tecnología en general. Tengo como objetivo continuar
-              desarrollándome en el área de Tecnologías de la Información,
-              fortaleciendo mis conocimientos en sistemas, infraestructura y
-              desarrollo de software, con miras a roles de mayor responsabilidad
-              técnica.
-            </p>
-          </div>
-          <div className="row">
             <a
               className="btn btn-dark"
               id="btnpdf"
@@ -64,6 +54,15 @@ export default function AcercaDe() {
             </a>
           </div>
         </section>
+        <div className="container">
+          <p id="presentacion">
+            Soy apasionado del desarrollo de software, hardware, PC Gaming y la
+            tecnología en general. Tengo como objetivo continuar desarrollándome
+            en el área de Tecnologías de la Información, fortaleciendo mis
+            conocimientos en sistemas, infraestructura y desarrollo de software,
+            con miras a roles de mayor responsabilidad técnica.
+          </p>
+        </div>
       </section>
     </>
   );
