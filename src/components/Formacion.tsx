@@ -1,4 +1,14 @@
+import Carr_img from "./Carr_img";
+import imgList from "./ImgList";
+
 export default function Formacion() {
+  const innerCar = imgList.autodidacta.map((im, index) => (
+    <Carr_img key={index} img={im} />
+  ));
+  return Elements(innerCar);
+}
+
+function Elements(carrousel_im: any) {
   return (
     <>
       <section id="formacion" className="container p-3 mb-2 text-light">
@@ -36,49 +46,7 @@ export default function Formacion() {
                   className="carousel carousel-dark slide"
                   data-bs-ride="carousel"
                 >
-                  <div className="carousel-inner">
-                    <div className="carousel-item active">
-                      <img
-                        src="cSharp.jpg"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="cSharpBack.jpg"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="/git.jpg" className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img src="/uml.jpg" className="d-block w-100" alt="..." />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="/js19.jpg"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="/python39.jpg"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                    <div className="carousel-item">
-                      <img
-                        src="/fullStack.jpg"
-                        className="d-block w-100"
-                        alt="..."
-                      />
-                    </div>
-                  </div>
+                  <div className="carousel-inner">{carrousel_im}</div>
                   <button
                     className="carousel-control-prev"
                     type="button"
