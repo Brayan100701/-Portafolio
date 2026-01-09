@@ -4,32 +4,31 @@ body {
 
 #acerca-de {
   padding: 13.5rem 2rem;
-  /* background-image: url("../img/hola.jpg"); */
   background-attachment: fixed;
   background-size: cover;
 }
 
 #acerca-de {
-  height: 100vh;
-  width: 100wh;
+  min-height: 100vh;
+  max-width: 100wh;
 }
 
 #contacto article {
-  height: 40vh;
-  display: grid;
+  height: auto;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr); */
 }
 
 #perfil {
-  height: 45vh;
+  height: 35vh;
   width: auto;
-  grid-row: 1/5;
-  grid-column: 2/3;
+  /* grid-row: 1/5;
+  grid-column: 2/3; */
 }
 
 #hola {
-  grid-row: 1/2;
+  /* grid-row: 1/2; */
   color: rgb(241, 226, 12);
 }
 
@@ -38,12 +37,24 @@ body {
 }
 
 #inge {
-  grid-row: 3/4;
+  /* grid-row: 3/4; */
   color: rgb(143, 130, 190);
 }
 
-#contacto article div {
+/* #contacto article div {
   grid-row: 4/5;
+} */
+
+#btnpdf {
+  margin-top: 5vh;
+  font-size: 2.5em;
+  font-weight: lighter;
+  color: rgb(69, 196, 133);
+}
+
+#btnpdf:hover {
+  box-shadow: 0px 0px 30px rgb(106, 50, 128);
+  transition: 0.5s;
 }
 
 .descripcion {
@@ -56,6 +67,12 @@ body {
   margin-left: 1em;
   margin-bottom: 1em;
   border-radius: 25%;
+}
+
+.iconos-portada:hover {
+  box-shadow: 0px 0px 30px rgb(54, 166, 211);
+  transform: scale(1.1);
+  transition: 0.6s;
 }
 
 #formacion {
@@ -79,7 +96,7 @@ h5 {
 .card:hover {
   box-shadow: 0px 0px 60px rgba(149, 39, 177, 0.808);
   transform: scale(1.045);
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .iconos {
@@ -91,9 +108,9 @@ h5 {
 }
 
 .iconos:hover {
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 30px rgb(7, 71, 114);
   transform: scale(1.1);
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 .iconos:hover > :not(:hover) {
