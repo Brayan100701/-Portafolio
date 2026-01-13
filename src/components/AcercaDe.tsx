@@ -50,8 +50,6 @@ export default function AcercaDe() {
               desarrollo de software, con miras a roles de mayor responsabilidad
               técnica.
             </p>
-          </div>
-          <div className="row">
             <a
               className="btn btn-dark"
               id="btnpdf"

@@ -2,13 +2,10 @@ import Carr_img from "./Carr_img";
 import imgList from "./ImgList";
 
 export default function Formacion() {
-  const innerCar = imgList.autodidacta.map((im, index) => (
-    <Carr_img key={index} img={im} />
-  ));
-  return Elements(innerCar);
+  return <Elements carrousel_im={imgList.autodidacta} />;
 }
 
-function Elements(carrousel_im: any) {
+function Elements({ carrousel_im }: any) {
   return (
     <>
       <section id="formacion" className="container p-3 mb-2 text-light">
@@ -46,7 +43,11 @@ function Elements(carrousel_im: any) {
                   className="carousel carousel-dark slide"
                   data-bs-ride="carousel"
                 >
-                  <div className="carousel-inner">{carrousel_im}</div>
+                  <div className="carousel-inner">
+                    {carrousel_im.map((e: string, index: number) => (
+                      <Carr_img key={index} img={e} index={index} />
+                    ))}
+                  </div>
                   <button
                     className="carousel-control-prev"
                     type="button"

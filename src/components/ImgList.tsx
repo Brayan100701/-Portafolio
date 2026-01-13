@@ -21,6 +21,7 @@ const imgList = {
     "/tecnologias/vite144.png",
   ],
   backend: [
+    "/tecnologias/cSharp.svg",
     "/tecnologias/microsoftDotNet.png",
     "/tecnologias/netFramework144.png",
     "/tecnologias/sqlServer144.png",
@@ -31,6 +32,7 @@ const imgList = {
     "/tecnologias/javaScript144.png",
     "/tecnologias/bootstrap144.png",
     "/tecnologias/react.png",
+    "/tecnologias/typeScript.svg",
   ],
   aprendiendo: [
     "/tecnologias/docker144.png",

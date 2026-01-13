@@ -12,19 +12,19 @@ export default function Skills() {
           </div>
           <div className="col-sm-9">
             <div className="row">
-              <div className="w-50">
+              <div className="col">
                 <TecCard imList={imgList.backend} titulo="Backend" />
               </div>
-              <div className="w-50">
+              <div className="col">
                 <TecCard imList={imgList.frontend} titulo="FrontEnd" />
               </div>
             </div>
             <br />
             <div className="row">
-              <div className="w-50">
+              <div className="col">
                 <TecCard imList={imgList.aprendiendo} titulo="Aprendiendo" />
               </div>
-              <div className="w-50">
+              <div className="col">
                 <TecCard imList={imgList.otras} titulo="Otras" />
               </div>
             </div>
