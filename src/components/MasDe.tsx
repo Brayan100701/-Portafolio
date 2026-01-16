@@ -1,11 +1,17 @@
-export default function MasDe() {
+interface Props {
+  colorScheme: {
+    cardColor: string;
+  };
+}
+
+export default function MasDe({ colorScheme }: Props) {
   return (
     <>
       <section id="mas-de" className="container p-3 mb-2 text-light">
         <h2>Más sobre mi</h2>
         <div className="row">
           <div className="col-sm-7 mb-3 mb-sm-0">
-            <div className="card bg-secondary text-light">
+            <div className={"card " + colorScheme.cardColor}>
               <div className="card-body">
                 <h5>Aptitudes</h5>
                 <ul className="extra">
@@ -21,7 +27,7 @@ export default function MasDe() {
             </div>
           </div>
           <div className="col-sm-5">
-            <div className="card bg-secondary text-light">
+            <div className={"card " + colorScheme.cardColor}>
               <div className="card-body">
                 <h5>Hobbies</h5>
                 <ul className="extra">

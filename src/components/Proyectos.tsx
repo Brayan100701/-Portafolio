@@ -2,47 +2,51 @@ export default function Proyectos() {
   return (
     <>
       <section id="proyectos" className="container p-3 mb-2 text-light">
-        <h2>Proyectos</h2>
-        <div
-          id="carouselExampleAutoplaying"
-          className="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src="/cSharpBack.jpg" className="d-block w-100" alt="..." />
+        <h2>Proyectos destacados</h2>
+        <div className="container">
+          <div className="card text-center">
+            <div className="card-header">
+              <ul className="nav nav-tabs card-header-tabs">
+                <li className="nav-item">
+                  <a
+                    className="nav-link active"
+                    aria-current="true"
+                    href="#proyectos"
+                  >
+                    Active
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    aria-current="false"
+                    href="#proyectos"
+                  >
+                    Active
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a
+                    className="nav-link"
+                    aria-current="false"
+                    href="#proyectos"
+                  >
+                    Active
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div className="carousel-item">
-              <img src="/git.jpg" className="d-block w-100" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src="/python39.jpg" className="d-block w-100" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Special title treatment</h5>
+              <p className="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" className="btn btn-primary">
+                Go somewhere
+              </a>
             </div>
           </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
       </section>
     </>

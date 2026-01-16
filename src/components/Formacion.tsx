@@ -1,18 +1,33 @@
 import Carr_img from "./Carr_img";
 import imgList from "./ImgList";
 
-export default function Formacion() {
-  return <Elements carrousel_im={imgList.autodidacta} />;
+interface Props {
+  colorScheme: {
+    cardColor: string;
+  };
 }
 
-function Elements({ carrousel_im }: any) {
+export default function Formacion({ colorScheme }: Props) {
+  return (
+    <Elements carouselIm={imgList.autodidacta} colorScheme={colorScheme} />
+  );
+}
+
+interface PropsIn {
+  carouselIm: string[];
+  colorScheme: {
+    cardColor: string;
+  };
+}
+
+function Elements({ carouselIm, colorScheme }: PropsIn) {
   return (
     <>
       <section id="formacion" className="container p-3 mb-2 text-light">
         <h2>Formación</h2>
         <div className="row">
           <div className="col-sm-5 mb-3 mb-sm-0">
-            <div className="card bg-secondary text-light">
+            <div className={"card " + colorScheme.cardColor}>
               <div className="card-body">
                 <h5 className="card-title">Académica</h5>
                 <p className="card-text">
@@ -25,7 +40,7 @@ function Elements({ carrousel_im }: any) {
             </div>
           </div>
           <div className="col-sm-7">
-            <div className="card bg-secondary text-light">
+            <div className={"card " + colorScheme.cardColor}>
               <div className="card-body">
                 <h5 className="card-title">Autodidacta</h5>
                 <p className="card-text">
@@ -44,7 +59,7 @@ function Elements({ carrousel_im }: any) {
                   data-bs-ride="carousel"
                 >
                   <div className="carousel-inner">
-                    {carrousel_im.map((e: string, index: number) => (
+                    {carouselIm.map((e: string, index: number) => (
                       <Carr_img key={index} img={e} index={index} />
                     ))}
                   </div>

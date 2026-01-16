@@ -1,7 +1,7 @@
 export default function AcercaDe() {
   return (
     <>
-      <section id="acerca-de" className="text-light bg-dark">
+      <section id="acerca-de" className="text-light">
         <section id="contacto" className="container p-3 mb-2 text-light">
           <div className="row">
             <div className="col">
@@ -17,7 +17,7 @@ export default function AcercaDe() {
             </div>
             <div className="col">
               <img
-                className="rounded-circle"
+                className="rounded-circle iconos-portada"
                 src="/perfilFormal.png"
                 id="perfil"
               />
