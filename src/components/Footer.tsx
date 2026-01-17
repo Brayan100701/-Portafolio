@@ -12,13 +12,13 @@ export default function Footer() {
               <p>Atribucion de los iconos utilizados a </p>
             </div>
             <div className="col-3">
-              <a href="https://www.flaticon.es/">
+              <a href="https://www.flaticon.es/" target="blank">
                 <img src="/flatIcon.png" />
               </a>
-              <a href="https://fontawesome.com/">
+              <a href="https://fontawesome.com/" target="blank">
                 <img src="/fontAwesome.svg" />
               </a>
-              <a href="https://icons8.com/icons">
+              <a href="https://icons8.com/icons" target="blank">
                 <img src="/icons8.svg" />
               </a>
             </div>
