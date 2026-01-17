@@ -8,7 +8,10 @@ export default function MasDe({ colorScheme }: Props) {
   return (
     <>
       <section id="mas-de" className="container p-3 mb-2 text-light">
+        <br />
+        <br />
         <h2>Más sobre mi</h2>
+        <br />
         <div className="row">
           <div className="col-sm-7 mb-3 mb-sm-0">
             <div className={"card " + colorScheme.cardColor}>

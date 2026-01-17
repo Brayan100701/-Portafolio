@@ -1,9 +1,10 @@
 import NavBar from "./NavBar";
 import AcercaDe from "./AcercaDe";
 import Formacion from "./Formacion";
-// import Proyectos from "./Proyectos";
+import Proyectos from "./Proyectos";
 import Skills from "./Skills";
 import MasDe from "./MasDe";
+import Footer from "./Footer";
 
 function Welcome() {
   const colorScheme = {
@@ -13,10 +14,11 @@ function Welcome() {
     <>
       <NavBar />
       <AcercaDe />
-      {/* <Proyectos /> */}
+      <Proyectos />
       <Skills colorScheme={colorScheme} />
       <Formacion colorScheme={colorScheme} />
       <MasDe colorScheme={colorScheme} />
+      <Footer colorScheme={colorScheme} />
     </>
   );
 }

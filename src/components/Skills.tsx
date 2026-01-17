@@ -11,7 +11,10 @@ export default function Skills({ colorScheme }: Props) {
   return (
     <>
       <section id="skills" className="container p-3 mb-2 text-light">
+        <br />
+        <br />
         <h2>Tecnologías</h2>
+        <br />
         <div className="row">
           <div className="col-sm-3 mb-3 mb-sm-0">
             <TecCard

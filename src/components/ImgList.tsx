@@ -49,6 +49,11 @@ const imgList = {
     "/tecnologias/gemini.png",
     "/tecnologias/ollamaDark.png",
   ],
+  pokedexTec: [
+    "/tecnologias/react.png",
+    "/tecnologias/bootstrap144.png",
+    "/tecnologias/typeScript.svg",
+  ],
 };
 
 export default imgList;
