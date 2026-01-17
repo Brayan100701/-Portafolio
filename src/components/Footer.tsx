@@ -1,10 +1,4 @@
-interface Props {
-  colorScheme: {
-    cardColor: string;
-  };
-}
-
-export default function Footer({ colorScheme }: Props) {
+export default function Footer() {
   return (
     <>
       <br />

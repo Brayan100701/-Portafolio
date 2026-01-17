@@ -18,7 +18,7 @@ function Welcome() {
       <Skills colorScheme={colorScheme} />
       <Formacion colorScheme={colorScheme} />
       <MasDe colorScheme={colorScheme} />
-      <Footer colorScheme={colorScheme} />
+      <Footer />
     </>
   );
 }
