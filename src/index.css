@@ -102,6 +102,10 @@ h5 {
   margin-top: 1rem;
 }
 
+.proye-card {
+  margin-bottom: 2em;
+}
+
 .descripcion-proyecto {
   font-size: 1.2rem;
   overflow: hidden;
@@ -121,9 +125,6 @@ h5 {
 
 .proyect-preview {
   min-height: 30vh;
-}
-
-.proyect-preview img {
 }
 
 .iconos {
@@ -151,7 +152,20 @@ h5 {
 #footer {
   background-color: aliceblue;
   color: rgb(43, 83, 16);
-  height: 20vh;
+  min-height: 20vh;
   width: 100%;
   margin: 0;
+  padding: 2em;
+  padding-left: 4em;
+}
+
+#footer .row {
+  color: azure;
+  font-weight: bold;
+}
+
+#footer img {
+  max-width: 2.5em;
+  margin-right: 2em;
+  border-radius: 30%;
 }

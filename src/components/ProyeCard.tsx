@@ -12,14 +12,6 @@ type Props = {
 export default function ProyeCard({ imList, proyectResources }: Props) {
   return (
     <>
-      <Card imList={imList} proyectResources={proyectResources} />
-    </>
-  );
-}
-
-function Card({ imList, proyectResources }: Props) {
-  return (
-    <>
       <div className="card bg-dark bg-gradient text-center text-light proye-card">
         <div className="card-header">
           <h2>{proyectResources.title}</h2>

@@ -7,8 +7,45 @@ interface Props {
 export default function Footer({ colorScheme }: Props) {
   return (
     <>
-      <section id="footer" className="">
-        <div className="row"></div>
+      <br />
+      <br />
+      <br />
+      <section id="footer" className="bg-secondary">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-2"></div>
+            <div className="col-3">
+              <p>Atribucion de los iconos utilizados a </p>
+            </div>
+            <div className="col-3">
+              <a href="https://www.flaticon.es/">
+                <img src="/flatIcon.png" />
+              </a>
+              <a href="https://fontawesome.com/">
+                <img src="/fontAwesome.svg" />
+              </a>
+              <a href="https://icons8.com/icons">
+                <img src="/icons8.svg" />
+              </a>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div className="row">
+            <div className="col-sm-2"></div>
+            <div className="col-3">
+              <p>Tecnologías usadas para este portafolio</p>
+            </div>
+            <div className="col-4">
+              <img src="/tecnologias/react.png" />
+              <img src="/tecnologias/typeScript.svg" />
+              <img src="/tecnologias/html144.png" />
+              <img src="/tecnologias/css144.png" />
+              <img src="/tecnologias/bootstrap144.png" />
+            </div>
+          </div>
+          <div className="row"></div>
+        </div>
       </section>
     </>
   );
