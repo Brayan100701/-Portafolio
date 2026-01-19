@@ -25,6 +25,7 @@ body {
 
 #hola {
   color: rgb(241, 226, 12);
+  font-size: 4em;
 }
 
 #nombre {
@@ -33,6 +34,7 @@ body {
 
 #inge {
   color: rgb(143, 130, 190);
+  font-size: 2.5em;
 }
 
 #btnpdf {
@@ -98,8 +100,20 @@ h5 {
   transition: 0.7s;
 }
 
-.card-body {
+/* .card-body {
   margin-top: 1rem;
+} */
+
+.card-body h5 {
+  font-size: 1.3em;
+}
+
+.card .mas-de {
+  padding-left: 1;
+}
+
+.mas-de h5 {
+  font-size: 2.5em;
 }
 
 .proye-card {
@@ -145,8 +159,9 @@ h5 {
   opacity: 0.3;
 }
 
-.extra {
-  font-size: 2.5vh;
+.extra li {
+  font-size: 1.3rem;
+  color: aliceblue;
 }
 
 #footer {
