@@ -37,7 +37,7 @@ export default function NavBar() {
                   aria-current="page"
                   href="#skills"
                 >
-                  Habilidades
+                  Tecnologías
                 </a>
               </li>
               <li className="nav-item">

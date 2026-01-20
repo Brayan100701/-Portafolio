@@ -27,7 +27,6 @@ function Elements({ carouselIm, colorScheme }: PropsIn) {
         <br />
         <br />
         <h2>Formación</h2>
-        <br />
         <div className="row">
           <div className="col-sm-5 mb-3 mb-sm-0">
             <div className={"card " + colorScheme.cardColor}>

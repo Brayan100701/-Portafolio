@@ -9,7 +9,7 @@ const AptitudesList = {
     "Toma de decisiones",
   ],
   hobbies: [
-    "Entusiaste del Hardware y PC Gaming",
+    "Entusiasta del Hardware y PC Gaming",
     "Noticias de seguridad y novedades en distintas tecnologías",
     "Contenido de Divulgación Científica",
     "Videojuegos",
