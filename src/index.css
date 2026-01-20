@@ -80,6 +80,14 @@ body {
   font-size: 2vh;
 }
 
+.certificate-link {
+  padding-top: 1em;
+}
+.certificate-link button {
+  font-weight: bold;
+  padding: 1em;
+}
+
 h2 {
   margin-top: 10vh;
   margin-left: 2vh;

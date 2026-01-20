@@ -14,7 +14,7 @@ export default function Formacion({ colorScheme }: Props) {
 }
 
 interface PropsIn {
-  carouselIm: string[];
+  carouselIm: { image: string; certificate: string }[];
   colorScheme: {
     cardColor: string;
   };
@@ -62,8 +62,15 @@ function Elements({ carouselIm, colorScheme }: PropsIn) {
                   data-bs-ride="carousel"
                 >
                   <div className="carousel-inner">
-                    {carouselIm.map((e: string, index: number) => (
-                      <Carr_img key={index} img={e} index={index} />
+                    {carouselIm.map((e, index) => (
+                      <>
+                        <Carr_img
+                          key={index}
+                          img={e.image}
+                          index={index}
+                          certificate={e.certificate}
+                        />
+                      </>
                     ))}
                   </div>
                   <button

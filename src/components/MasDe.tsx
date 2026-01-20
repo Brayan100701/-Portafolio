@@ -1,3 +1,5 @@
+import AptitudesList from "./AptitudesList";
+
 interface Props {
   colorScheme: {
     cardColor: string;
@@ -17,29 +19,7 @@ export default function MasDe({ colorScheme }: Props) {
             <div className={"card " + colorScheme.cardColor}>
               <div className="card-body mas-de">
                 <h5>Aptitudes</h5>
-                <ul className="list-group list-group-flush extra">
-                  <li className="list-group-item bg-transparent">
-                    Autodidacta
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Competencias digitales
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Orientación al resultado
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Resolución de problemas
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Capacidad de adaptación
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Proactividad
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Toma de decisiones
-                  </li>
-                </ul>
+                <ListElements elementList={AptitudesList.aptitudes} />
               </div>
             </div>
           </div>
@@ -47,29 +27,28 @@ export default function MasDe({ colorScheme }: Props) {
             <div className={"card " + colorScheme.cardColor}>
               <div className="card-body mas-de">
                 <h5>Hobbies</h5>
-                <ul className="list-group list-group-flush extra">
-                  <li className="list-group-item bg-transparent">Libros</li>
-                  <li className="list-group-item bg-transparent">
-                    Entusiasta del Hardware y PC Gaming
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Noticias de seguridad y novedades en distintas tecnologías
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Contenido de Divulgación científica
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Videojuegos
-                  </li>
-                  <li className="list-group-item bg-transparent">
-                    Anime y Manga
-                  </li>
-                </ul>
+                <ListElements elementList={AptitudesList.hobbies} />
               </div>
             </div>
           </div>
         </div>
       </section>
+    </>
+  );
+}
+
+interface ListElement {
+  elementList: string[];
+}
+
+function ListElements({ elementList }: ListElement) {
+  return (
+    <>
+      <ul className="list-group list-group-flush extra">
+        {elementList.map((e) => (
+          <li className="list-group-item bg-transparent">{e}</li>
+        ))}
+      </ul>
     </>
   );
 }
