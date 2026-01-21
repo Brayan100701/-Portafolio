@@ -1,4 +1,8 @@
-export default function Footer() {
+interface Props {
+  footer: { icons: string; tech: string };
+}
+
+export default function Footer({ footer }: Props) {
   return (
     <>
       <br />
@@ -9,7 +13,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-sm-2"></div>
             <div className="col-3">
-              <p>Atribucion de los iconos utilizados a </p>
+              <p>{footer.icons} </p>
             </div>
             <div className="col-3">
               <a href="https://www.flaticon.es/" target="blank">
@@ -28,7 +32,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-sm-2"></div>
             <div className="col-3">
-              <p>Tecnologías usadas para este portafolio</p>
+              <p>{footer.tech}</p>
             </div>
             <div className="col-4">
               <img src="/tecnologias/react.png" />

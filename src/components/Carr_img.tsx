@@ -2,9 +2,15 @@ interface Props {
   img: string;
   index: number;
   certificate: string;
+  certificateLink: string;
 }
 
-export default function Carr_img({ img, index, certificate }: Props) {
+export default function Carr_img({
+  img,
+  index,
+  certificate,
+  certificateLink,
+}: Props) {
   const clase = index === 0 ? "carousel-item active" : "carousel-item";
   return (
     <>
@@ -12,7 +18,9 @@ export default function Carr_img({ img, index, certificate }: Props) {
         <img src={img} className="d-block w-100" alt="..." />
         <div className="row text-center">
           <a href={certificate} target="blank" className="certificate-link">
-            <button className="btn btn-dark text-light">Ver Certificado</button>
+            <button className="btn btn-dark text-light">
+              {certificateLink}
+            </button>
           </a>
         </div>
       </div>

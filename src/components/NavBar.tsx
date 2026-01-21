@@ -1,4 +1,16 @@
-export default function NavBar() {
+interface Props {
+  language: {
+    project: string;
+    tech: string;
+    formation: string;
+    more: string;
+    changeL: string;
+  };
+  setLanguage: any;
+  english: boolean;
+}
+
+export default function NavBar({ language, setLanguage, english }: Props) {
   return (
     <>
       <nav
@@ -28,7 +40,7 @@ export default function NavBar() {
                   aria-current="page"
                   href="#proyectos"
                 >
-                  Proyectos
+                  {language.project}
                 </a>
               </li>
               <li className="nav-item">
@@ -37,7 +49,7 @@ export default function NavBar() {
                   aria-current="page"
                   href="#skills"
                 >
-                  Tecnologías
+                  {language.tech}
                 </a>
               </li>
               <li className="nav-item">
@@ -46,7 +58,7 @@ export default function NavBar() {
                   aria-current="page"
                   href="#formacion"
                 >
-                  Formación
+                  {language.formation}
                 </a>
               </li>
               <li className="nav-item">
@@ -55,8 +67,17 @@ export default function NavBar() {
                   aria-current="page"
                   href="#mas-de"
                 >
-                  Más sobre mí
+                  {language.more}
                 </a>
+              </li>
+              <li className="nav-item">
+                <button
+                  type="button"
+                  className="btn btn-link"
+                  onClick={() => setLanguage(!english)}
+                >
+                  {language.changeL}
+                </button>
               </li>
             </ul>
           </div>

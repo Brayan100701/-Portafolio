@@ -1,4 +1,15 @@
-export default function AcercaDe() {
+interface Props {
+  language: {
+    hi: string;
+    name: string;
+    degree: string;
+    description: string;
+    button: string;
+    ref: string;
+  };
+}
+
+export default function AcercaDe({ language }: Props) {
   return (
     <>
       <section id="acerca-de" className="text-light">
@@ -6,13 +17,13 @@ export default function AcercaDe() {
           <div className="row">
             <div className="col">
               <p className="descripcion" id="hola">
-                ¡Hola!
+                {language.hi}
               </p>
               <p className="descripcion" id="nombre">
-                Mi nombre es Brayan Benjamín Sánchez Guillén
+                {language.name}
               </p>
               <p className="descripcion" id="inge">
-                Ingeniero en Computación
+                {language.degree}
               </p>
             </div>
             <div className="col">
@@ -42,23 +53,16 @@ export default function AcercaDe() {
             />
           </a>
           <div className="container">
-            <p id="presentacion">
-              Soy apasionado del desarrollo de software, hardware, PC Gaming y
-              la tecnología en general. Tengo como objetivo continuar
-              desarrollándome en el área de Tecnologías de la Información,
-              fortaleciendo mis conocimientos en sistemas, infraestructura y
-              desarrollo de software, con miras a roles de mayor responsabilidad
-              técnica.
-            </p>
+            <p id="presentacion">{language.description}</p>
             <a
               className="btn btn-dark"
               id="btnpdf"
-              href="/CV/CV-Brayan-Sanchez.pdf"
+              href={language.ref}
               target="_blank"
               rel="noopener noreferrer"
               download="CV-Brayan Sanchez.pdf"
             >
-              Descarga mi CV
+              {language.button}
             </a>
           </div>
         </section>

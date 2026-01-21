@@ -5,21 +5,29 @@ interface Props {
   colorScheme: {
     cardColor: string;
   };
+  language: {
+    title: string;
+    tools: string;
+    back: string;
+    learning: string;
+    frontend: string;
+    others: string;
+  };
 }
 
-export default function Skills({ colorScheme }: Props) {
+export default function Skills({ colorScheme, language }: Props) {
   return (
     <>
       <section id="skills" className="container p-3 mb-2 text-light">
         <br />
         <br />
-        <h2>Tecnologías</h2>
+        <h2>{language.title}</h2>
         <br />
         <div className="row">
           <div className="col-sm-3 mb-3 mb-sm-0">
             <TecCard
               imList={imgList.herramientas}
-              titulo="Herramientas"
+              titulo={language.tools}
               colorScheme={colorScheme}
             />
           </div>
@@ -28,14 +36,14 @@ export default function Skills({ colorScheme }: Props) {
               <div className="col">
                 <TecCard
                   imList={imgList.backend}
-                  titulo="Backend"
+                  titulo={language.back}
                   colorScheme={colorScheme}
                 />
               </div>
               <div className="col">
                 <TecCard
                   imList={imgList.frontend}
-                  titulo="FrontEnd"
+                  titulo={language.frontend}
                   colorScheme={colorScheme}
                 />
               </div>
@@ -45,14 +53,14 @@ export default function Skills({ colorScheme }: Props) {
               <div className="col">
                 <TecCard
                   imList={imgList.aprendiendo}
-                  titulo="Aprendiendo"
+                  titulo={language.learning}
                   colorScheme={colorScheme}
                 />
               </div>
               <div className="col">
                 <TecCard
                   imList={imgList.otras}
-                  titulo="Otras"
+                  titulo={language.others}
                   colorScheme={colorScheme}
                 />
               </div>

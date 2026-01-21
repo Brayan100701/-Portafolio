@@ -5,11 +5,23 @@ interface Props {
   colorScheme: {
     cardColor: string;
   };
+  language: {
+    formation: string;
+    academic: string;
+    academicDescription: string;
+    selfTaught: string;
+    selfTaughtDescription: string;
+    certificateLink: string;
+  };
 }
 
-export default function Formacion({ colorScheme }: Props) {
+export default function Formacion({ colorScheme, language }: Props) {
   return (
-    <Elements carouselIm={imgList.autodidacta} colorScheme={colorScheme} />
+    <Elements
+      carouselIm={imgList.autodidacta}
+      colorScheme={colorScheme}
+      language={language}
+    />
   );
 }
 
@@ -18,25 +30,29 @@ interface PropsIn {
   colorScheme: {
     cardColor: string;
   };
+  language: {
+    formation: string;
+    academic: string;
+    academicDescription: string;
+    selfTaught: string;
+    selfTaughtDescription: string;
+    certificateLink: string;
+  };
 }
 
-function Elements({ carouselIm, colorScheme }: PropsIn) {
+function Elements({ carouselIm, colorScheme, language }: PropsIn) {
   return (
     <>
       <section id="formacion" className="container p-3 mb-2 text-light">
         <br />
         <br />
-        <h2>Formación</h2>
+        <h2>{language.formation}</h2>
         <div className="row">
           <div className="col-sm-5 mb-3 mb-sm-0">
             <div className={"card " + colorScheme.cardColor}>
               <div className="card-body">
-                <h5 className="card-title">Académica</h5>
-                <p className="card-text">
-                  Concluí la carrera de Ingeniería en Computación en la ESIME
-                  Culhuacan y actualmente me encuentro en las últimas etapas
-                  para el trámite de título y Cédula profesionales
-                </p>
+                <h5 className="card-title">{language.academic}</h5>
+                <p className="card-text">{language.academicDescription}</p>
                 <img className="img-thumbnail" src="/esime.jpg" />
               </div>
             </div>
@@ -44,17 +60,8 @@ function Elements({ carouselIm, colorScheme }: PropsIn) {
           <div className="col-sm-7">
             <div className={"card " + colorScheme.cardColor}>
               <div className="card-body">
-                <h5 className="card-title">Autodidacta</h5>
-                <p className="card-text">
-                  Me defino por mi autonomía e iniciativa. Mi proceso se nutre
-                  de documentación, Reddit, YouTube, foros y cursos,
-                  permitiéndome integrar conocimientos nuevos con agilidad.
-                  Transformo esta información en soluciones prácticas y
-                  resultados tangibles, demostrando una mentalidad resolutiva y
-                  una evolución constante impulsada por la curiosidad genuina y
-                  la capacidad de investigar soluciones eficaces por cuenta
-                  propia.
-                </p>
+                <h5 className="card-title">{language.selfTaught}</h5>
+                <p className="card-text">{language.selfTaughtDescription}</p>
                 <div
                   id="carouselExampleAutoplaying"
                   className="carousel carousel-dark slide"
@@ -68,6 +75,7 @@ function Elements({ carouselIm, colorScheme }: PropsIn) {
                           img={e.image}
                           index={index}
                           certificate={e.certificate}
+                          certificateLink={language.certificateLink}
                         />
                       </>
                     ))}

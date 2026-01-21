@@ -5,11 +5,22 @@ type Props = {
     github: string;
     acceso: string;
     preview: string;
-    descripcion: string;
+    descripcion: { spanish: string; english: string };
   };
+  language: {
+    tech: string;
+    github: string;
+    visit: string;
+  };
+  currentLang: boolean;
 };
 
-export default function ProyeCard({ imList, proyectResources }: Props) {
+export default function ProyeCard({
+  imList,
+  proyectResources,
+  language,
+  currentLang,
+}: Props) {
   return (
     <>
       <div className="card bg-dark bg-gradient text-center text-light proye-card">
@@ -21,7 +32,7 @@ export default function ProyeCard({ imList, proyectResources }: Props) {
           <div className="row">
             <div className="col-sm-4">
               <div className="row">
-                <h5>Tecnologias utilizadas</h5>
+                <h5>{language.tech}</h5>
                 <div className="row rowProyec">
                   {imList.map((e, index) => (
                     <ImTec key={index} source={e} />
@@ -30,7 +41,9 @@ export default function ProyeCard({ imList, proyectResources }: Props) {
               </div>
               <br />
               <div className="descripcion-proyecto">
-                {proyectResources.descripcion}
+                {!currentLang
+                  ? proyectResources.descripcion.spanish
+                  : proyectResources.descripcion.english}
               </div>
             </div>
             <div className="col-8 proyect-preview">
@@ -41,7 +54,7 @@ export default function ProyeCard({ imList, proyectResources }: Props) {
         <div className="card-footer text-body-secondary">
           <a href={proyectResources.github} target="blank">
             <button type="button" className="btn btn-dark fw-bold">
-              Ver en GitHub
+              {language.github}
               <img
                 src="/tecnologias/github250.png"
                 className="iconos-foot-proyecto"
@@ -51,7 +64,7 @@ export default function ProyeCard({ imList, proyectResources }: Props) {
           {proyectResources.acceso ? (
             <a href={proyectResources.acceso} target="blank">
               <button type="button" className="btn btn-dark fw-bold">
-                Visitar
+                {language.visit}
                 <img src="/internet.png" className="iconos-foot-proyecto"></img>
               </button>
             </a>

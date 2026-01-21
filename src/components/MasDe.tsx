@@ -1,25 +1,28 @@
-import AptitudesList from "./AptitudesList";
-
 interface Props {
   colorScheme: {
     cardColor: string;
   };
+  aptitudesList: {
+    about: string;
+    aptitudes: string[];
+    hobbies: string[];
+  };
 }
 
-export default function MasDe({ colorScheme }: Props) {
+export default function MasDe({ colorScheme, aptitudesList }: Props) {
   return (
     <>
       <section id="mas-de" className="container p-3 mb-2 text-light">
         <br />
         <br />
-        <h2>Más sobre mi</h2>
+        <h2>{aptitudesList.about}</h2>
         <br />
         <div className="row">
           <div className="col-sm-7 mb-3 mb-sm-0">
             <div className={"card " + colorScheme.cardColor}>
               <div className="card-body mas-de">
                 <h5>Aptitudes</h5>
-                <ListElements elementList={AptitudesList.aptitudes} />
+                <ListElements elementList={aptitudesList.aptitudes} />
               </div>
             </div>
           </div>
@@ -27,7 +30,7 @@ export default function MasDe({ colorScheme }: Props) {
             <div className={"card " + colorScheme.cardColor}>
               <div className="card-body mas-de">
                 <h5>Hobbies</h5>
-                <ListElements elementList={AptitudesList.hobbies} />
+                <ListElements elementList={aptitudesList.hobbies} />
               </div>
             </div>
           </div>
@@ -45,8 +48,10 @@ function ListElements({ elementList }: ListElement) {
   return (
     <>
       <ul className="list-group list-group-flush extra">
-        {elementList.map((e) => (
-          <li className="list-group-item bg-transparent">{e}</li>
+        {elementList.map((e, index) => (
+          <li key={index} className="list-group-item bg-transparent">
+            {e}
+          </li>
         ))}
       </ul>
     </>
