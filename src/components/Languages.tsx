@@ -76,7 +76,7 @@ const Languages = {
       others: "Otras",
     },
     proyects: {
-      title: "Proyectos destacados",
+      title: "Proyectos realizados y en desarrollo",
       tech: "Tecnologías utilizadas",
       github: "Ver en GitHub",
       visit: "Visitar",
@@ -155,7 +155,7 @@ const Languages = {
       others: "Others",
     },
     proyects: {
-      title: "Projects",
+      title: "Projects done and working on",
       tech: "Technologies used",
       github: "See in GitHub",
       visit: "Visit",
