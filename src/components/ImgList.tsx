@@ -10,7 +10,7 @@ const imgList = {
     },
     {
       image: "/git.jpg",
-      certificate: "https://ude.my/UC-55a50295-00bf-4455-8d04-2c8756e9f8ef",
+      certificate: "https://ude.my/UC-3164bfed-dff6-41e3-bf22-a763d79e06d5",
     },
     {
       image: "/uml.jpg",
@@ -22,7 +22,7 @@ const imgList = {
     },
     {
       image: "/python39.jpg",
-      certificate: "https://ude.my/UC-3164bfed-dff6-41e3-bf22-a763d79e06d5",
+      certificate: "https://ude.my/UC-55a50295-00bf-4455-8d04-2c8756e9f8ef",
     },
     {
       image: "/fullStack.jpg",
