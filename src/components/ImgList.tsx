@@ -1,6 +1,11 @@
 const imgList = {
   autodidacta: [
     {
+      image: "/ccna.jpg",
+      certificate:
+        "https://www.udemy.com/certificate/UC-5a12581c-eee2-4642-92d6-9c2b568ab120/",
+    },
+    {
       image: "/cSharp.jpg",
       certificate: "https://ude.my/UC-f50a6c2e-49f0-4767-a8e7-24ba5148480c",
     },
