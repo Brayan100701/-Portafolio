@@ -8,17 +8,19 @@ const ProyectResources = {
       spanish:
         "En este proyecto consumo la API pública PokeAPI para crear " +
         "una Pokédex que permite ver la información básica de los Pokémon." +
-        "Este proyecto me permitió aplicar el uso de hooks como useState y " +
-        "useEffect para manipular el contenido del DOM según la información " +
-        "recibida, así como el consumo y manipulación de la información " +
-        "recibida de una API.",
+        "A través de este proyecto, aprendí a manipular el DOM de una página " +
+        "a con el uso de hooks según la interacción del usuario con el sitio. " +
+        "Este proyecto también me permitió aprender a manipular la información " +
+        "recibida de API y presentarla al usuario final en una interfaz gráfica.",
       english:
         "In this project, I consume the public API PokeAPI to " +
         "create a Pokedex that allows to see basic information of " +
-        "Pokemon. This project allowed me to apply the use of hooks " +
-        "like useState and useEffect to manipulate the DOM according " +
-        "to the information received, as well as the use and " +
-        "manipulation of the information received from an API.",
+        "Pokemon. Through this proyect, I learnt how to manipulate " +
+        "the content of a web page's DOM through the use of hooks, according to " +
+        "the user's interaction with the page. This project also " +
+        "allowed me to learn how to manipulate the information " +
+        "received from an API an present it to the final user " +
+        "using a user interface.",
     },
   },
   proyectosPython: {
